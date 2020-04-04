@@ -1,0 +1,61 @@
+import React from 'react';
+import Navbar from '../components/navbar'
+import '../assets/sidebar.css'
+import Sidebar from 'react-sidebar'
+class LandingPage extends React.Component {
+    state = {
+        sidebarOpen: false,
+        dock: false
+    }
+
+    onSetSidebarOpen = () => {
+        this.setState({ sidebarOpen: !this.state.sidebarOpen, dock: !this.state.dock });
+    }
+    render() {
+        return (
+            <div>
+
+                <Sidebar
+                    sidebar={<b>Sidebar content</b>}
+                    open={this.state.sidebarOpen}
+                    touch={true}
+                    shadow={true}
+                    defaultSidebarWidth="100"
+                    // docked={this.state.dock}
+                    onSetOpen={this.onSetSidebarOpen}
+                    styles={{ sidebar: { background: "white" } }}
+                >
+                    <div className='landing'>
+                        <div className='backlayer text-center' style={{ marginTop: -12 }}>
+                            <img alt="bg" src={require('../image/LandingPage2D.png')} width='100%'></img>
+                        </div>
+                        <div className='toplayer' style={{ verticalAlign: 'middle', height: '100%' }}>
+                            <Navbar />
+                            <button className="bt-about" onClick={this.onSetSidebarOpen} >
+                                About Me
+                            </button>
+                            <div style={{ marginTop: '2.9vw', height: '23vw', marginLeft: '3.5vw' }}>
+                                <p style={{ color: 'white', marginBottom: '5vw', fontSize: '4vw' }}>Hello, I am</p>
+                                <p className style={{ color: 'white', display: 'inline', fontSize: '2vw' }}>A young <div style={{ color: '#00CCFF', width: 10, display: 'inline', fontWeight: 'bold' }}>Coder</div> who passionately explores technology </p>
+                                <p style={{ fontSize: '2vw', color: 'white', marginBottom: '0.1vw' }}>Find Me on</p>
+                                <a href="https://id.linkedin.com/in/abdi-alghi-40575518b">
+                                    <img className="icon" alt="linkedin" style={{ cursor: 'pointer', padding: '0.3vw' }} src={require('../image/linkedin.png')} />
+                                </a>
+                                <a href="https://github.com/Abdi-01">
+                                    <img className="icon" alt="git" style={{ cursor: 'pointer', padding: '0.3vw' }} src={require('../image/github.png')} />
+                                </a>
+                                <a href="https://instagram.com/abdi.alghifar?igshid=sdz55fg3bgv7">
+                                    <img className="icon" alt="ins" style={{ cursor: 'pointer', padding: '0.3vw' }} src={require('../image/instagram.png')} />
+                                </a>
+                            </div>
+                            <button className="bt-hiring">Hire Me</button>
+                            <button className="bt-portofolio">Portfolio</button>
+                        </div>
+                    </div>
+                </Sidebar>
+            </div>
+        );
+    }
+}
+
+export default LandingPage

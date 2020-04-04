@@ -36,3 +36,132 @@
     transform: rotate(360deg);
   }
 }
+
+.objectFit{
+  object-fit: cover;
+}
+
+.year-tag{
+  background-color: dimgrey;
+  color: white;
+  padding-top: 1vw;
+  border-bottom: 0.4vw solid #00CCFF;
+  padding-left: 2%;
+  padding-right: 10%;
+  clip-path: polygon(0 0, 100% 0%, 85% 100%, 0 100%);
+}
+
+.pdf-view{
+  width: 7vw;
+}
+
+.landing{
+  position: relative;
+    /* background-size: cover; */
+}
+
+.backlayer{
+  position: absolute;
+}
+
+.toplayer{
+  position: relative;
+  z-index: 1;
+}
+
+.intro{
+  background-color: transparent !important;
+}
+
+.font-name{
+  font-family: "Hemi Head";
+  src: url('./font/hemihead.ttf');
+}
+/* Navbar */
+.size-navbar{
+  width: 100%;
+  height: 4.6vw;
+}
+
+/* active Navbar */
+.activeClass {
+  z-index: 5;
+  color: white;
+  border-bottom: 1px solid #00CCFF;
+  /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); */
+  /* border-radius: 5px !important; */
+  /* background-color: #00CCFF !important; */
+  /* background-color: #007bff !important; */
+}
+
+/* Button Hiring */
+.bt-hiring{
+  margin: 0 0 0 3.5vw;
+  font-size: 1.4vw;
+  padding: 0.4vw 1.5vw 0.4vw 1.5vw;
+  border:2px solid #00CCFF;
+  border-radius: 4vw;
+  background-color:#00CCFF;
+  color:#5F5D5D;
+}
+
+.bt-hiring:hover{
+  margin: 0 0 0 3.5vw;
+  font-size: 1.4vw;
+  padding: 0.4vw 1.5vw 0.4vw 1.5vw;
+  border:2px solid white;
+  border-radius: 4vw;
+  background-color:white;
+  color:gray;
+}
+
+.bt-portofolio:hover{
+  margin: 0 0 0 1vw;
+  font-size: 1.4vw;
+  padding: 0.4vw 1.5vw 0.4vw 1.5vw;
+  border:2px solid #00CCFF;
+  border-radius: 4vw;
+  background-color:transparent;
+  color:#00CCFF;
+}
+
+.bt-portofolio{
+  margin: 0 0 0 1vw;
+  font-size: 1.4vw;
+  padding: 0.4vw 1.5vw 0.4vw 1.5vw;
+  border:2px solid white;
+  border-radius: 4vw;
+  background-color:transparent;
+  color:white;
+}
+
+.icon{
+  width: 3.3vw;
+  transition: 1000ms;
+}
+.icon:hover{
+  width: 4vw;
+  /* background-color: #00CCFF; */
+  transition: 500ms;
+}
+
+.bt-download-cv{
+  background-color: gray;
+}
+.bt-download-cv:hover{
+  background-color: #00CCFF;
+}
+
+.portfolio-card{
+  background-color: white;
+  cursor: pointer;
+  height: 44vh;
+  margin: 0.8vh 2vw 0.3vh 5.5vw;
+}
+
+.portfolio-card:hover{
+  background-color: #00CCFF;
+  cursor: pointer;
+  height: 44vh;
+  margin: 0.8vh 2vw 0.3vh 5.5vw;
+}

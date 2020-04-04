@@ -1,0 +1,10 @@
+.bt-about{
+    transform: rotate(90deg);
+    border: none;
+    margin: 3vw 0 0 -3vw;
+    font-size: 1vw;
+    padding: 0.1vw 1.5vw 0.4vw 1.5vw;
+    border:2px solid #00CCFF;
+    background-color:#00CCFF;
+    color:#5F5D5D;
+}
